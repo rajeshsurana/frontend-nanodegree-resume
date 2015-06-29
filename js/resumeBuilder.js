@@ -202,7 +202,7 @@ var projects = {
 projects.display();
 
 var bio = {
-	"name" : "Rajesh Surana",
+	"name" : "Rajesh SURANA",
 	"role" : "Software Engineer",
 	"welcomeMessage" : "Welcome to Rajesh Surana's Resume!",
 	"contacts" : {
