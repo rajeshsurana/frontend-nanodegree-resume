@@ -5,54 +5,109 @@ $("#header").prepend(formattedName);
 
 var education = {
 	"schools" : [
+    {
+		"name" : "Arizona State University",
+		"location" : "Tempe, US",
+		"degree": "Masters",
+		"majors" : ["CS"],
+		"dates" : "2014 - 2016",
+		"url" : "http://www.asu.edu"
+	},
 	{
 		"name" : "Walchand College Of Engineering",
 		"location" : "Sangli, India",
 		"degree": "Bachelors",
 		"majors" : ["IT"],
-		"dates" : 2012,
+		"dates" : "2008 - 2012",
 		"url" : "http://www.walchandsangli.ac.in/"
-	},
-	{
-		"name" : "Arizona State University",
-		"location" : "Tempe, US",
-		"degree": "Masters",
-		"majors" : ["CS"],
-		"dates" : 2016,
-		"url" : "http://www.asu.edu"
 	}
+
 	],
     "onlineCourses": [
     {
-        "title": "Android Developer Nanodegree",
+        "title": "Android Development for Beginners",
         "school": "Google and Udacity",
-        "date": 2016,
-        "url": "https://www.udacity.com/course/android-developer-nanodegree--nd801"
+        "date": 2015,
+        "url": "https://www.udacity.com/course/android-development-for-beginners--ud837"
     },
     {
-        "title": "Front-End Web Developer Nanodegree",
+        "title": "Intro to jQuery",
         "school": "Udacity",
-        "date": 2016,
-        "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+        "date": 2015,
+        "url": "https://www.udacity.com/course/intro-to-jquery--ud245"
     },
     {
-        "title": "Full Stack Web Developer Nanodegree",
+        "title": "How to Use Git and GitHub",
         "school": "Udacity",
-        "date": 2016,
-        "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004"
+        "date": 2015,
+        "url": "https://www.udacity.com/course/how-to-use-git-and-github--ud775"
     },
     {
-        "title": "Foundations of Computer Science XSeries",
+        "title": "Responsive Web Design Fundamentals",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893"
+    },
+    {
+        "title": "Intro to HTML and CSS",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/intro-to-html-and-css--ud304"
+    },
+    {
+        "title": "JavaScript Basics",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/javascript-basics--ud804"
+    },
+    {
+        "title": "Website Performance Optimization",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/website-performance-optimization--ud884"
+    },
+    {
+        "title": "Programming Foundations with Python",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/programming-foundations-with-python--ud036"
+    },
+    {
+        "title": "Developing Android Apps",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/developing-android-apps--ud853"
+    },
+    {
+        "title": "Intro to Java Programming",
+        "school": "Udacity",
+        "date": 2015,
+        "url": "https://www.udacity.com/course/intro-to-java-programming--cs046"
+    },
+    {
+        "title": "Introduction to Computer Science and Programming Using Python",
         "school": "MIT and Coursera",
-        "date": 2016,
-        "url": "https://www.edx.org/xseries"
+        "date": 2015,
+        "url": "https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-0"
     },
     {
-        "title": "Fundamentals of Computing",
+        "title": "An Introduction to Interactive Programming in Python (Part 1)",
         "school": "Rice University and Coursera",
-        "date": 2016,
-        "url": "https://www.coursera.org/specialization/fundamentalscomputing2/37?utm_medium=catalog"
-    }  
+        "date": 2015,
+        "url": "https://www.coursera.org/course/interactivepython1"
+    },
+    {
+        "title": "Programming Mobile Applications for Android Handheld Systems: Part 1",
+        "school": "University of Maryland and Coursera",
+        "date": 2015,
+        "url": "https://www.coursera.org/course/androidpart1"
+    },
+    {
+        "title": "Programming for Everybody (Python)",
+        "school": "University of Maryland and Coursera",
+        "date": 2015,
+        "url": "https://www.coursera.org/course/pythonlearn"
+    }     
     ],
     display : function(){
                 var formattedschoolName = "";
@@ -102,14 +157,6 @@ education.display();
 
 var work = {
 	"jobs" : [
-	{
-		"employer" : "3DPLM Software Solution Ltd.",
-		"title" : "Software Developer",
-        "location": "Pune, MH, India",
-		"dates" : "Aug 2012- Jul 2014",
-		"description" : "Software development in C++/Java for CATIA – designing, coding, testing, documentation and maintenance. <br/> Improved performance of the product in terms of memory usage (in MBs) and response time (>5%). <br/>Provided quick fixes without regression for issues from clients like Boeing, Honda, Mercedes, NOKIA and Toyota. <br/>Analyzing the quality of the code written by 3 teams; Preparing the knowledge sharing documents to train freshers. <br/>Collecting and promoting best quality code of 3 teams to counterparts in France using SCM tool; developed automation scripts.",
-        "url" : "http://www.3dplmsoftware.com/"
-	},
     {
 		"employer" : "Explosion SportsWear",
 		"title" : "Web Developer",
@@ -117,7 +164,15 @@ var work = {
 		"dates" : "May 2015 - Aug 2015",
 		"description" : "Developing complete E-commerce website from front-end to back-end for explosion sportswear in  MVC architecture. <br/>Designing database for storing sell and user information. <br/>Developing smooth and minimum interaction payment system. <br/>Fresh designs for showcasing products. <br/>Front-end and back-end validation for user input. Setting up server and email configurations. <br/>Using git for development process",
         "url" : "http://www.explosionsportswear.com/"
-    }
+    },
+	{
+		"employer" : "3DPLM Software Solution Ltd.",
+		"title" : "Software Developer",
+        "location": "Pune, MH, India",
+		"dates" : "Aug 2012- Jul 2014",
+		"description" : "Software development in C++/Java for CATIA – designing, coding, testing, documentation and maintenance. <br/> Improved performance of the product in terms of memory usage (in MBs) and response time (>5%). <br/>Provided quick fixes without regression for issues from clients like Boeing, Honda, Mercedes, NOKIA and Toyota. <br/>Analyzing the quality of the code written by 3 teams; Preparing the knowledge sharing documents to train freshers. <br/>Collecting and promoting best quality code of 3 teams to counterparts in France using SCM tool; developed automation scripts.",
+        "url" : "http://www.3dplmsoftware.com/"
+	}
 	],
     display : function(){
                 if(work.jobs.length > 0){
@@ -149,16 +204,12 @@ work.display();
 var projects = {
 	"projects" : [
 	{
-		"title" : "Compiler Construction",
-		"dates" : "Fall 2014",
-		"description" : "Composed of four stacks – Lexer, Parser, Semantic Analyzer and Code Generator. Technologies used: State Table, Regular Expressions, DFA, BNF, EBNF, Syntax diagram and Binary-Search Tree",
+		"title" : "Android Apps",
+		"dates" : "Summer 2015",
+		"description" : "This project contains various Android projects that I did while completing online Android courses",
 		"images":[
-		"https://github.com/rajeshsurana/Compiler/raw/master/Images/Lexer.jpg",
-        "https://github.com/rajeshsurana/Compiler/raw/master/Images/Parser.jpg",
-        "https://github.com/rajeshsurana/Compiler/raw/master/Images/SemanticAnalyzer.jpg",
-        "https://github.com/rajeshsurana/Compiler/raw/master/Images/CodeGenerator.jpg"
 		],
-        "url" : "http://rajeshsurana.github.io/Compiler-Construction"
+        "url" : "http://rajeshsurana.github.io/Android-Portfolio"
 	},
 	{
 		"title" : "Python Programming",
@@ -172,12 +223,36 @@ var projects = {
 	{
 		"title" : "TeeSocial eCommerce website",
 		"dates" : "Summer 2015",
-		"description" : "I developed this website while working as a web developer at Explosion SportsWear. E-commerce website that allows you to crowdfund awesome custom apparel, with zero costs and zero hassle. Developing complete website - front-end and back-end as well as database. Technologies: PHP (Zend), JavaScript (JQuery), CSS (Bootstrap), HTML5, MySQL, git, photoshop",
+		"description" : "I developed this website while working as a web developer at Explosion SportsWear. E-commerce website that allows you to crowdfund awesome custom apparel, with zero costs and zero hassle. <br/>Developed complete website - front-end and back-end as well as database. <br/>Technologies: PHP (Zend), JavaScript (JQuery), CSS (Bootstrap), HTML5, MySQL, git, photoshop.",
 		"images":[
 		"https://realpython.com/learn/python-first-steps/images/pythonlogo.jpg"
 		],
-        "url": "http://www.teesocial.com/"
-	}   
+        "url": "http://www.teesocial.x10.bz/"
+	},
+    {
+        "title" : "Online Recommendation System - StackOverflow",
+        "dates" : "Spring 2015",
+        "description" : "Building an efficient recommendation engine based on semantic analysis that incorporates data from heterogeneous social networks and thereby addressing the cold-start problem. <br/>Providing interactive visualization by scrapping traditional static recommender.<br/> Technologies: PHP5, JQuery, Bootstrap, SVG",
+        "url" : "http://www.visualrecommender.x10.bz/"
+    },
+    {
+        "title" : "Clock Synchronization in Distributed Environment (Linux)",
+        "dates" : "Fall 2014",
+        "description" : "Created kernel module to create character driver which can be used by application to access device. <br/>Designed a new networking protocol on IPv4 level for clock synchronization to impose ordering on messages.",
+        "url": "http://rajeshsurana.github.io/Clock_Synchronization_Linux/"
+    },
+	{
+		"title" : "Compiler Construction",
+		"dates" : "Fall 2014",
+		"description" : "Composed of four stacks – Lexer, Parser, Semantic Analyzer and Code Generator. <br/>Technologies: State Table, Regular Expressions, DFA, BNF, EBNF, Syntax diagram and Binary-Search Tree",
+		"images":[
+		"https://github.com/rajeshsurana/Compiler/raw/master/Images/Lexer.jpg",
+        "https://github.com/rajeshsurana/Compiler/raw/master/Images/Parser.jpg",
+        "https://github.com/rajeshsurana/Compiler/raw/master/Images/SemanticAnalyzer.jpg",
+        "https://github.com/rajeshsurana/Compiler/raw/master/Images/CodeGenerator.jpg"
+		],
+        "url" : "http://rajeshsurana.github.io/Compiler-Construction"
+	}
 	],
     display : function(){
                 var formattedprojectTitle = "";
