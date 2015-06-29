@@ -15,7 +15,7 @@
 
 h1 {
   font-size: 40px;
-  color: #F5A623;
+  color: #FFFFFF;
   line-height: 48px;
   display: inline;
 }
@@ -105,7 +105,7 @@ a {
 }
 
 .gray {
-  background-color: #F3F3F3;
+  background-color: #EDFCE9;
   padding-bottom: 10px;
   clear:both;
 }
@@ -116,7 +116,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #0A864E;
 }
 
 .flex-box {
@@ -126,6 +126,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .center-content {
@@ -164,6 +165,7 @@ img {
 
 span {
   padding: 5px;
+  color: rgb(208, 237, 72);
 }
 
 #letsConnect {
